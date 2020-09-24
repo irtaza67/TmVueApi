@@ -40,5 +40,35 @@ module.exports = ({ config }) => {
     }
   })
 
+  api.get('/qa/product', async (req, res) => {
+    let err = null;
+
+    try {
+      const reqQuery = req.query;
+      const apiUrl = config.magento2.api.url;
+
+      if (!reqQuery || !reqQuery.productId) {
+        err = 'No product id provided';
+        throw err;
+      }
+
+      let productId = reqQuery.productId;
+      let requestUrl = apiUrl + '/V1/yotpoapis/getquestionsofproduct/' + productId;
+
+      const sampleQuoteResponse = await axios.get(
+        requestUrl,
+        {
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        }
+      );
+
+      apiStatus(res, sampleQuoteResponse.data, 200);
+    } catch (error) {
+      err = error
+      apiStatus(res, err, 200);
+    }
+  })
   return api
 }
