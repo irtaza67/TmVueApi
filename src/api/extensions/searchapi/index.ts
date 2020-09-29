@@ -10,7 +10,7 @@ module.exports = ({ config, db }) => {
       try {
         const formDetails = req.body;
         const emailResponse = await axios.put(
-          config.magento2.api.url + '/V1/vueStoreservices/contact-us/',
+          config.magento2.api.url + '/V1/vueStoreservices/search-api/',
           formDetails,
           {
             headers: {
