@@ -339,6 +339,18 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
+"@paypal/checkout-server-sdk@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@paypal/checkout-server-sdk/-/checkout-server-sdk-1.0.2.tgz#ce6434723a8796eb2f236d0ba906ae4466ac12c2"
+  integrity sha512-9wNxqgXrolEPfX62PEwyUB3SBGVF7v9N28rNJpXNp89qEpLoLStM+CT4wm/fcfYiVj9BHpimKcB4B7CBbLirxQ==
+  dependencies:
+    "@paypal/paypalhttp" "^1.0.0"
+
+"@paypal/paypalhttp@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@paypal/paypalhttp/-/paypalhttp-1.0.0.tgz#a591c1da39c63e2b9c62735348b82abed5037e01"
+  integrity sha512-6gHT5HhPLObICXU8LFFiuoH0vCh3y1y0jl0OWDRuTZvptZ1WRS2eKcHigheytqxk+CWTH0qh0M3S5vEf1PJrSw==
+
 "@types/babel-types@*", "@types/babel-types@^7.0.0":
   version "7.0.7"
   resolved "https://registry.yarnpkg.com/@types/babel-types/-/babel-types-7.0.7.tgz#667eb1640e8039436028055737d2b9986ee336e3"
@@ -1090,6 +1102,11 @@ bcrypt-pbkdf@^1.0.0:
   integrity sha1-pDAdOJtqQ/m2f/PKEaP2Y342Dp4=
   dependencies:
     tweetnacl "^0.14.3"
+
+bellajs@^7.5.0:
+  version "7.5.0"
+  resolved "https://registry.yarnpkg.com/bellajs/-/bellajs-7.5.0.tgz#797c408dc05ea13a1e01dc1ca737498e234a9099"
+  integrity sha512-1hjCZS29BGA7BuTKKVqW+iPotOz+nOU0wQAh1zDeRLXOauk2MpOUiyby6vCv2VIGygv5lKJSJcGfaOjs+9vvMg==
 
 bignumber.js@^7.0.0:
   version "7.2.1"
@@ -5371,6 +5388,15 @@ pause@0.0.1:
   resolved "https://registry.yarnpkg.com/pause/-/pause-0.0.1.tgz#1d408b3fdb76923b9543d96fb4c9dfd535d9cb5d"
   integrity sha1-HUCLP9t2kjuVQ9lvtMnf1TXZy10=
 
+paypal-nvp-api@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/paypal-nvp-api/-/paypal-nvp-api-1.3.0.tgz#e08eabc93f22fa4996dfbc41f98bae757fbea80f"
+  integrity sha512-WlKtjOE+ffCoNooRvodyybmLMUZ7XdNId+Ylxe5WDpB/iQCo65TVf/o56JL0QcIo9+Hi8v8Ujm4nvrnF5me/HQ==
+  dependencies:
+    bellajs "^7.5.0"
+    promise-wtf "^1.2.4"
+    request "^2.86.0"
+
 performance-now@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
@@ -5575,6 +5601,11 @@ promise-queue@^2.2.3:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/promise-queue/-/promise-queue-2.2.5.tgz#2f6f5f7c0f6d08109e967659c79b88a9ed5e93b4"
   integrity sha1-L29ffA9tCBCelnZZx5uIqe1ek7Q=
+
+promise-wtf@^1.2.4:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/promise-wtf/-/promise-wtf-1.2.4.tgz#8cbdd31ea10dee074fbb6387cbc96e413993376c"
+  integrity sha512-wOZ+ZUG0/Lsk+muOElLtteIteyvF5B1bNcVLhmlv6PDKcAAQGa5Bf0maN3rj73FWyjJE840MzeQyNE6KOKpgrg==
 
 promise@^7.0.1:
   version "7.3.1"
@@ -6078,7 +6109,7 @@ request@2.x.x, request@>=2.9.0, request@^2.85.0, request@^2.87.0:
     tunnel-agent "^0.6.0"
     uuid "^3.3.2"
 
-request@^2.72.0, request@^2.88.0:
+request@^2.72.0, request@^2.86.0, request@^2.88.0:
   version "2.88.2"
   resolved "https://registry.yarnpkg.com/request/-/request-2.88.2.tgz#d73c918731cb5a87da047e207234146f664d12b3"
   integrity sha512-MsvtOrfG9ZcrOwAW+Qi+F6HbD0CWXEh9ou77uOb7FM2WPhwT7smM833PzanhJLsgXjN89Ir6V2PczXNnMpwKhw==
